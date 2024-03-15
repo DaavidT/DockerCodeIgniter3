@@ -8,7 +8,7 @@ services:
     depends_on:
       - mysql
     volumes:
-      - ./NubeInvirtual:/var/www/html
+      - ./invirtualmx:/var/www/html
     ports:
       - 7700:80
     stdin_open: true
@@ -24,7 +24,7 @@ services:
       MYSQL_PASSWORD: invirtual
     volumes:
       - ./mysql-data:/var/lib/mysql
-      - ./nubeInvirtual.sql:/docker-entrypoint-initdb.d/nubeInvirtual.sql
+      - ./invirw3b_nubeInvirtualMx.sql:/docker-entrypoint-initdb.d/invirw3b_nubeInvirtualMx.sql
     ports:
       - 3310:3306
 
